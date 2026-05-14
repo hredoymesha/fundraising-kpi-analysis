@@ -1,0 +1,5 @@
+area,doors_knocked,conversations,signups,donations_eur,active_hours,conversation_rate,signup_rate,avg_donation_per_signup,signups_per_hour
+Helsinki Center,1710,561,85,2550.0,26.5,0.328,0.152,30.0,3.21
+Vantaa Tikkurila,1600,494,69,2070.0,25.0,0.309,0.14,30.0,2.76
+Helsinki East,1785,501,58,1740.0,27.5,0.281,0.116,30.0,2.11
+Espoo Tapiola,1445,391,45,1350.0,23.5,0.271,0.115,30.0,1.91
