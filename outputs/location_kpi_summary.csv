@@ -1,0 +1,13 @@
+period,location_label,location_type,pledges,hours,target_pph,achieved_pph,target_attainment,productivity_gap,monthly_pledge_share,regular_giving_share,avg_supporter_age,avg_monthly_donation_eur,planning_priority
+2023-W24,Family Fair D,Fair,28,55.8,0.39,0.5,1.282,0.11,0.96,0.46,35.5,14.93,Scale or repeat
+2023-W17,Education Fair B,Fair,17,52.5,0.3,0.32,1.067,0.02,0.76,0.65,39.4,13.65,Scale or repeat
+2023-W39,Community Fair E,Fair,24,64.0,0.36,0.38,1.056,0.02,0.88,0.62,37.8,16.1,Scale or repeat
+2023-W21,Spring Fair C,Fair,30,78.3,0.38,0.38,1.0,0.0,0.97,0.67,41.7,15.84,Scale or repeat
+2023-W13,Community Fair A,Fair,20,84.8,0.3,0.24,0.8,-0.06,0.75,0.65,41.2,14.85,Keep and monitor
+2023-W29,Shopping Centre E,Stand,15,61.0,0.34,0.25,0.735,-0.09,0.73,0.6,38.9,16.2,Review before repeating
+2023-W34,Retail Location F,Stand,11,48.0,0.32,0.23,0.719,-0.09,0.64,0.55,40.1,15.7,Review before repeating
+2023-W44,Transit Location G,Stand,8,51.5,0.31,0.16,0.516,-0.15,0.7,0.5,39.3,14.8,Review before repeating
+2023-W06,Shopping Centre B,Stand,12,66.0,0.35,0.18,0.514,-0.17,0.67,0.33,36.5,15.33,Review before repeating
+2023-W02,Shopping Centre A,Stand,9,70.5,0.29,0.13,0.448,-0.16,0.78,0.67,37.2,15.0,Review before repeating
+2023-W08,Retail Location C,Stand,4,28.5,0.35,0.14,0.4,-0.21,0.5,0.5,38.0,17.5,Review before repeating
+2023-W11,Transit Location D,Stand,6,42.0,0.36,0.14,0.389,-0.22,0.83,0.5,36.2,16.83,Review before repeating

@@ -1,0 +1,13 @@
+period,location_label,location_type,pledges,hours,target_pph,achieved_pph,monthly_pledge_share,regular_giving_share,avg_supporter_age,avg_monthly_donation_eur
+2023-W02,Shopping Centre A,Stand,9,70.5,0.29,0.13,0.78,0.67,37.2,15.00
+2023-W06,Shopping Centre B,Stand,12,66.0,0.35,0.18,0.67,0.33,36.5,15.33
+2023-W08,Retail Location C,Stand,4,28.5,0.35,0.14,0.50,0.50,38.0,17.50
+2023-W11,Transit Location D,Stand,6,42.0,0.36,0.14,0.83,0.50,36.2,16.83
+2023-W13,Community Fair A,Fair,20,84.8,0.30,0.24,0.75,0.65,41.2,14.85
+2023-W17,Education Fair B,Fair,17,52.5,0.30,0.32,0.76,0.65,39.4,13.65
+2023-W21,Spring Fair C,Fair,30,78.3,0.38,0.38,0.97,0.67,41.7,15.84
+2023-W24,Family Fair D,Fair,28,55.8,0.39,0.50,0.96,0.46,35.5,14.93
+2023-W29,Shopping Centre E,Stand,15,61.0,0.34,0.25,0.73,0.60,38.9,16.20
+2023-W34,Retail Location F,Stand,11,48.0,0.32,0.23,0.64,0.55,40.1,15.70
+2023-W39,Community Fair E,Fair,24,64.0,0.36,0.38,0.88,0.62,37.8,16.10
+2023-W44,Transit Location G,Stand,8,51.5,0.31,0.16,0.70,0.50,39.3,14.80

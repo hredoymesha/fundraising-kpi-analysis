@@ -1,0 +1,37 @@
+<svg width="920" height="592" viewBox="0 0 920 592" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Location Target Attainment</title>
+<rect width="100%" height="100%" fill="#f8fafc"/>
+<text x="220" y="42" font-family="Arial" font-size="24" font-weight="700" fill="#0f172a">Location Target Attainment</text>
+<text x="24" y="106" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Family Fair D</text>
+<rect x="220" y="84" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="84" width="580" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="106" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">128.2%</text>
+<text x="24" y="164" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Education Fair B</text>
+<rect x="220" y="142" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="142" width="482" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="164" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">106.7%</text>
+<text x="24" y="222" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Community Fair E</text>
+<rect x="220" y="200" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="200" width="477" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="222" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">105.6%</text>
+<text x="24" y="280" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Spring Fair C</text>
+<rect x="220" y="258" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="258" width="452" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="280" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">100.0%</text>
+<text x="24" y="338" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Community Fair A</text>
+<rect x="220" y="316" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="316" width="361" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="338" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">80.0%</text>
+<text x="24" y="396" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Shopping Centre E</text>
+<rect x="220" y="374" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="374" width="332" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="396" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">73.5%</text>
+<text x="24" y="454" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Retail Location F</text>
+<rect x="220" y="432" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="432" width="325" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="454" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">71.9%</text>
+<text x="24" y="512" font-family="Arial" font-size="15" font-weight="600" fill="#334155">Transit Location G</text>
+<rect x="220" y="490" width="580" height="30" rx="6" fill="#e2e8f0"/>
+<rect x="220" y="490" width="233" height="30" rx="6" fill="#2563eb"/>
+<text x="818" y="512" font-family="Arial" font-size="15" font-weight="700" fill="#0f172a">51.6%</text>
+</svg>

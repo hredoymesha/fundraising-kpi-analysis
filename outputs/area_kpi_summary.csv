@@ -1,5 +1,5 @@
-area,doors_knocked,conversations,signups,donations_eur,active_hours,conversation_rate,signup_rate,avg_donation_per_signup,signups_per_hour
-Helsinki Center,1710,561,85,2550.0,26.5,0.328,0.152,30.0,3.21
-Vantaa Tikkurila,1600,494,69,2070.0,25.0,0.309,0.14,30.0,2.76
-Helsinki East,1785,501,58,1740.0,27.5,0.281,0.116,30.0,2.11
-Espoo Tapiola,1445,391,45,1350.0,23.5,0.271,0.115,30.0,1.91
+region,doors_knocked,conversations,pledges,total_monthly_value_eur,active_hours,conversation_rate,pledge_rate,pledges_per_hour,avg_monthly_donation_eur
+Metro Center,1710,561,85,2550.0,26.5,0.328,0.152,3.21,30.0
+North Transit,1600,494,69,2070.0,25.0,0.309,0.14,2.76,30.0
+East Residential,1785,501,58,1740.0,27.5,0.281,0.116,2.11,30.0
+West District,1445,391,45,1350.0,23.5,0.271,0.115,1.91,30.0

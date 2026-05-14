@@ -7,12 +7,19 @@ from pathlib import Path
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = PROJECT_ROOT / "data" / "fundraising_kpi_sample.csv"
+DATA_DIR = PROJECT_ROOT / "data"
 OUTPUT_DIR = PROJECT_ROOT / "outputs"
-OUTPUT_PATH = OUTPUT_DIR / "area_kpi_summary.csv"
+
+ACTIVITY_DATA_PATH = DATA_DIR / "fundraising_kpi_sample.csv"
+LOCATION_DATA_PATH = DATA_DIR / "location_performance_sample.csv"
+
+AREA_SUMMARY_PATH = OUTPUT_DIR / "area_kpi_summary.csv"
+LOCATION_SUMMARY_PATH = OUTPUT_DIR / "location_kpi_summary.csv"
 INSIGHTS_PATH = OUTPUT_DIR / "insights.md"
-SIGNUPS_CHART_PATH = OUTPUT_DIR / "signups_by_area.svg"
-SIGNUP_RATE_CHART_PATH = OUTPUT_DIR / "signup_rate_by_area.svg"
+
+PLEDGES_CHART_PATH = OUTPUT_DIR / "pledges_by_region.svg"
+PPH_CHART_PATH = OUTPUT_DIR / "pledges_per_hour_by_region.svg"
+LOCATION_CHART_PATH = OUTPUT_DIR / "location_target_attainment.svg"
 
 
 def safe_rate(numerator: float, denominator: float) -> float:
@@ -21,112 +28,141 @@ def safe_rate(numerator: float, denominator: float) -> float:
     return numerator / denominator
 
 
-def read_rows() -> list[dict[str, str]]:
-    with DATA_PATH.open(newline="", encoding="utf-8") as file:
+def read_csv(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as file:
         return list(csv.DictReader(file))
 
 
-def summarize_by_area(rows: list[dict[str, str]]) -> list[dict[str, object]]:
-    area_totals: dict[str, dict[str, float]] = defaultdict(
+def write_csv(path: Path, rows: list[dict[str, object]], fieldnames: list[str]) -> None:
+    OUTPUT_DIR.mkdir(exist_ok=True)
+    with path.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(rows)
+
+
+def summarize_by_region(rows: list[dict[str, str]]) -> list[dict[str, object]]:
+    totals: dict[str, dict[str, float]] = defaultdict(
         lambda: {
             "doors_knocked": 0,
             "conversations": 0,
-            "signups": 0,
-            "donations_eur": 0,
+            "pledges": 0,
+            "total_monthly_value_eur": 0,
             "active_hours": 0,
         }
     )
 
     for row in rows:
-        area = row["area"]
-        area_totals[area]["doors_knocked"] += float(row["doors_knocked"])
-        area_totals[area]["conversations"] += float(row["conversations"])
-        area_totals[area]["signups"] += float(row["signups"])
-        area_totals[area]["donations_eur"] += float(row["donations_eur"])
-        area_totals[area]["active_hours"] += float(row["active_hours"])
+        region = row["region"]
+        totals[region]["doors_knocked"] += float(row["doors_knocked"])
+        totals[region]["conversations"] += float(row["conversations"])
+        totals[region]["pledges"] += float(row["pledges"])
+        totals[region]["total_monthly_value_eur"] += float(row["total_monthly_value_eur"])
+        totals[region]["active_hours"] += float(row["active_hours"])
 
     summary = []
-    for area, totals in area_totals.items():
-        doors = totals["doors_knocked"]
-        conversations = totals["conversations"]
-        signups = totals["signups"]
-        donations = totals["donations_eur"]
-        hours = totals["active_hours"]
+    for region, values in totals.items():
+        doors = values["doors_knocked"]
+        conversations = values["conversations"]
+        pledges = values["pledges"]
+        monthly_value = values["total_monthly_value_eur"]
+        hours = values["active_hours"]
 
         summary.append(
             {
-                "area": area,
+                "region": region,
                 "doors_knocked": int(doors),
                 "conversations": int(conversations),
-                "signups": int(signups),
-                "donations_eur": round(donations, 2),
+                "pledges": int(pledges),
+                "total_monthly_value_eur": round(monthly_value, 2),
                 "active_hours": round(hours, 1),
                 "conversation_rate": round(safe_rate(conversations, doors), 3),
-                "signup_rate": round(safe_rate(signups, conversations), 3),
-                "avg_donation_per_signup": round(safe_rate(donations, signups), 2),
-                "signups_per_hour": round(safe_rate(signups, hours), 2),
+                "pledge_rate": round(safe_rate(pledges, conversations), 3),
+                "pledges_per_hour": round(safe_rate(pledges, hours), 2),
+                "avg_monthly_donation_eur": round(safe_rate(monthly_value, pledges), 2),
             }
         )
 
-    return sorted(summary, key=lambda item: item["signups"], reverse=True)
+    return sorted(summary, key=lambda item: item["pledges"], reverse=True)
 
 
-def write_summary(summary: list[dict[str, object]]) -> None:
-    OUTPUT_DIR.mkdir(exist_ok=True)
-    fieldnames = [
-        "area",
-        "doors_knocked",
-        "conversations",
-        "signups",
-        "donations_eur",
-        "active_hours",
-        "conversation_rate",
-        "signup_rate",
-        "avg_donation_per_signup",
-        "signups_per_hour",
-    ]
+def summarize_locations(rows: list[dict[str, str]]) -> list[dict[str, object]]:
+    summary = []
+    for row in rows:
+        target_pph = float(row["target_pph"])
+        achieved_pph = float(row["achieved_pph"])
+        target_attainment = safe_rate(achieved_pph, target_pph)
+        productivity_gap = achieved_pph - target_pph
 
-    with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as file:
-        writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(summary)
+        summary.append(
+            {
+                "period": row["period"],
+                "location_label": row["location_label"],
+                "location_type": row["location_type"],
+                "pledges": int(float(row["pledges"])),
+                "hours": round(float(row["hours"]), 1),
+                "target_pph": round(target_pph, 2),
+                "achieved_pph": round(achieved_pph, 2),
+                "target_attainment": round(target_attainment, 3),
+                "productivity_gap": round(productivity_gap, 2),
+                "monthly_pledge_share": round(float(row["monthly_pledge_share"]), 3),
+                "regular_giving_share": round(float(row["regular_giving_share"]), 3),
+                "avg_supporter_age": round(float(row["avg_supporter_age"]), 1),
+                "avg_monthly_donation_eur": round(float(row["avg_monthly_donation_eur"]), 2),
+                "planning_priority": classify_planning_priority(target_attainment),
+            }
+        )
+
+    return sorted(summary, key=lambda item: item["target_attainment"], reverse=True)
+
+
+def classify_planning_priority(target_attainment: float) -> str:
+    if target_attainment >= 1.0:
+        return "Scale or repeat"
+    if target_attainment >= 0.75:
+        return "Keep and monitor"
+    return "Review before repeating"
 
 
 def write_bar_chart(
-    summary: list[dict[str, object]],
-    metric: str,
+    rows: list[dict[str, object]],
+    label_key: str,
+    metric_key: str,
     title: str,
     output_path: Path,
-    value_suffix: str = "",
+    *,
+    percent: bool = False,
+    max_items: int | None = None,
 ) -> None:
-    width = 900
+    chart_rows = rows[:max_items] if max_items else rows
+    width = 920
     row_height = 58
-    left_margin = 190
-    right_margin = 110
+    left_margin = 220
+    right_margin = 120
     top_margin = 78
-    height = top_margin + (len(summary) * row_height) + 50
+    height = top_margin + (len(chart_rows) * row_height) + 50
     chart_width = width - left_margin - right_margin
-    max_value = max(float(item[metric]) for item in summary)
+    max_value = max(float(item[metric_key]) for item in chart_rows)
 
-    rows = [
+    svg_rows = [
         f'<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" '
-        'xmlns="http://www.w3.org/2000/svg" role="img">'
-        f"<title>{escape(title)}</title>"
-        '<rect width="100%" height="100%" fill="#f8fafc"/>'
+        'xmlns="http://www.w3.org/2000/svg" role="img">',
+        f"<title>{escape(title)}</title>",
+        '<rect width="100%" height="100%" fill="#f8fafc"/>',
         f'<text x="{left_margin}" y="42" font-family="Arial" font-size="24" '
-        f'font-weight="700" fill="#0f172a">{escape(title)}</text>'
+        f'font-weight="700" fill="#0f172a">{escape(title)}</text>',
     ]
 
-    for index, item in enumerate(summary):
+    for index, item in enumerate(chart_rows):
         y = top_margin + index * row_height
-        value = float(item[metric])
+        value = float(item[metric_key])
         bar_width = 0 if max_value == 0 else int((value / max_value) * chart_width)
-        label = escape(str(item["area"]))
-        value_label = f"{value:.1%}" if metric.endswith("rate") else f"{value:g}{value_suffix}"
+        label = escape(str(item[label_key]))
+        value_label = f"{value:.1%}" if percent else f"{value:g}"
 
-        rows.extend(
+        svg_rows.extend(
             [
-                f'<text x="24" y="{y + 28}" font-family="Arial" font-size="16" '
+                f'<text x="24" y="{y + 28}" font-family="Arial" font-size="15" '
                 f'font-weight="600" fill="#334155">{label}</text>',
                 f'<rect x="{left_margin}" y="{y + 6}" width="{chart_width}" height="30" '
                 'rx="6" fill="#e2e8f0"/>',
@@ -138,70 +174,128 @@ def write_bar_chart(
             ]
         )
 
-    rows.append("</svg>")
-    output_path.write_text("\n".join(rows), encoding="utf-8")
+    svg_rows.append("</svg>")
+    output_path.write_text("\n".join(svg_rows), encoding="utf-8")
 
 
-def write_insights(summary: list[dict[str, object]]) -> None:
-    top_signups = max(summary, key=lambda item: item["signups"])
-    top_signup_rate = max(summary, key=lambda item: item["signup_rate"])
-    top_donations = max(summary, key=lambda item: item["donations_eur"])
-    lowest_signup_rate = min(summary, key=lambda item: item["signup_rate"])
+def write_insights(
+    region_summary: list[dict[str, object]],
+    location_summary: list[dict[str, object]],
+) -> None:
+    top_region_pledges = max(region_summary, key=lambda item: item["pledges"])
+    top_region_pph = max(region_summary, key=lambda item: item["pledges_per_hour"])
+    top_location = max(location_summary, key=lambda item: item["target_attainment"])
+    review_locations = [
+        item for item in location_summary if item["planning_priority"] == "Review before repeating"
+    ]
+
+    review_names = ", ".join(str(item["location_label"]) for item in review_locations[:3])
+    if not review_names:
+        review_names = "None in this sample"
 
     content = f"""# Fundraising KPI Analysis - Insights
 
 ## Executive Summary
 
-This sample analysis compares fundraising performance across four areas. The analysis uses basic KPI calculations to understand activity volume, conversion quality, donation value, and productivity.
+This project analyzes fictional nonprofit face-to-face fundraising data. It combines team activity KPIs and location performance KPIs to support route planning, coaching, and performance reporting.
 
 ## Key Findings
 
-- Best area by total signups: {top_signups["area"]} with {top_signups["signups"]} signups.
-- Best area by signup rate: {top_signup_rate["area"]} with {top_signup_rate["signup_rate"]:.1%}.
-- Best area by total donation value: {top_donations["area"]} with {top_donations["donations_eur"]} EUR.
-- Lowest signup rate: {lowest_signup_rate["area"]} with {lowest_signup_rate["signup_rate"]:.1%}.
+- Best region by total pledges: {top_region_pledges["region"]} with {top_region_pledges["pledges"]} pledges.
+- Best region by productivity: {top_region_pph["region"]} with {top_region_pph["pledges_per_hour"]} pledges per hour.
+- Best location by target attainment: {top_location["location_label"]} at {top_location["target_attainment"]:.1%} of target PPH.
+- Locations to review before repeating: {review_names}.
 
 ## Business Recommendations
 
-- Prioritize high-performing areas when planning future team routes.
-- Review lower conversion areas to understand whether timing, team approach, or location quality affected results.
-- Use signup rate and signups per hour together, because total signups alone does not show efficiency.
-- Continue tracking KPIs weekly so team leaders can coach based on data instead of guesswork.
+- Prioritize regions with both high pledge volume and high pledges per hour.
+- Repeat or scale locations that meet or exceed target PPH.
+- Review locations below 75% target attainment before booking them again.
+- Compare activity volume with conversion quality, because high traffic does not always mean strong fundraising performance.
+- Use this analysis weekly so team leaders can coach with evidence instead of relying only on memory.
 
-## Portfolio Note
+## Data Privacy Note
 
-This is a sample portfolio project. The data is fictional and created for learning purposes, but the analysis structure reflects real fundraising KPI work.
+This project uses fictional sample data. It does not include private organizational data, real employee-level results, real route strategy, or exact confidential location performance.
 """
     INSIGHTS_PATH.write_text(content, encoding="utf-8")
 
 
-def print_insights(summary: list[dict[str, object]]) -> None:
-    top_signups = max(summary, key=lambda item: item["signups"])
-    top_signup_rate = max(summary, key=lambda item: item["signup_rate"])
-    top_donations = max(summary, key=lambda item: item["donations_eur"])
+def print_summary(
+    region_summary: list[dict[str, object]],
+    location_summary: list[dict[str, object]],
+) -> None:
+    best_region = max(region_summary, key=lambda item: item["pledges"])
+    best_location = max(location_summary, key=lambda item: item["target_attainment"])
 
     print("Fundraising KPI Analysis")
     print("========================")
-    print(f"Best area by total signups: {top_signups['area']} ({top_signups['signups']} signups)")
+    print(f"Best region by pledges: {best_region['region']} ({best_region['pledges']} pledges)")
     print(
-        "Best area by signup rate: "
-        f"{top_signup_rate['area']} ({top_signup_rate['signup_rate']:.1%})"
+        "Best location by target attainment: "
+        f"{best_location['location_label']} ({best_location['target_attainment']:.1%})"
     )
-    print(
-        "Best area by donation value: "
-        f"{top_donations['area']} ({top_donations['donations_eur']} EUR)"
-    )
-    print(f"Summary saved to: {OUTPUT_PATH}")
+    print(f"Region summary saved to: {AREA_SUMMARY_PATH}")
+    print(f"Location summary saved to: {LOCATION_SUMMARY_PATH}")
 
 
 def main() -> None:
-    rows = read_rows()
-    summary = summarize_by_area(rows)
-    write_summary(summary)
-    write_insights(summary)
-    write_bar_chart(summary, "signups", "Total Signups by Area", SIGNUPS_CHART_PATH)
-    write_bar_chart(summary, "signup_rate", "Signup Rate by Area", SIGNUP_RATE_CHART_PATH)
-    print_insights(summary)
+    activity_rows = read_csv(ACTIVITY_DATA_PATH)
+    location_rows = read_csv(LOCATION_DATA_PATH)
+
+    region_summary = summarize_by_region(activity_rows)
+    location_summary = summarize_locations(location_rows)
+
+    write_csv(
+        AREA_SUMMARY_PATH,
+        region_summary,
+        [
+            "region",
+            "doors_knocked",
+            "conversations",
+            "pledges",
+            "total_monthly_value_eur",
+            "active_hours",
+            "conversation_rate",
+            "pledge_rate",
+            "pledges_per_hour",
+            "avg_monthly_donation_eur",
+        ],
+    )
+    write_csv(
+        LOCATION_SUMMARY_PATH,
+        location_summary,
+        [
+            "period",
+            "location_label",
+            "location_type",
+            "pledges",
+            "hours",
+            "target_pph",
+            "achieved_pph",
+            "target_attainment",
+            "productivity_gap",
+            "monthly_pledge_share",
+            "regular_giving_share",
+            "avg_supporter_age",
+            "avg_monthly_donation_eur",
+            "planning_priority",
+        ],
+    )
+
+    write_insights(region_summary, location_summary)
+    write_bar_chart(region_summary, "region", "pledges", "Pledges by Region", PLEDGES_CHART_PATH)
+    write_bar_chart(region_summary, "region", "pledges_per_hour", "Pledges per Hour by Region", PPH_CHART_PATH)
+    write_bar_chart(
+        location_summary,
+        "location_label",
+        "target_attainment",
+        "Location Target Attainment",
+        LOCATION_CHART_PATH,
+        percent=True,
+        max_items=8,
+    )
+    print_summary(region_summary, location_summary)
 
 
 if __name__ == "__main__":

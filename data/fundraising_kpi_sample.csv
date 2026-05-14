@@ -1,18 +1,17 @@
-date,area,team_leader,doors_knocked,conversations,signups,donations_eur,active_hours
-2024-01-08,Helsinki Center,Mesha,420,126,18,540,6.5
-2024-01-09,Espoo Tapiola,Mesha,360,104,12,360,6.0
-2024-01-10,Vantaa Tikkurila,Amina,390,118,15,450,6.0
-2024-01-11,Helsinki East,Amina,440,132,16,480,7.0
-2024-01-15,Helsinki Center,Mesha,410,139,21,630,6.5
-2024-01-16,Espoo Tapiola,Mesha,350,91,10,300,5.5
-2024-01-17,Vantaa Tikkurila,Amina,405,121,17,510,6.5
-2024-01-18,Helsinki East,Amina,430,116,13,390,6.5
-2024-01-22,Helsinki Center,Mesha,450,150,24,720,7.0
-2024-01-23,Espoo Tapiola,Mesha,370,100,11,330,6.0
-2024-01-24,Vantaa Tikkurila,Amina,395,125,18,540,6.0
-2024-01-25,Helsinki East,Amina,460,129,14,420,7.0
-2024-01-29,Helsinki Center,Mesha,430,146,22,660,6.5
-2024-01-30,Espoo Tapiola,Mesha,365,96,12,360,6.0
-2024-01-31,Vantaa Tikkurila,Amina,410,130,19,570,6.5
-2024-02-01,Helsinki East,Amina,455,124,15,450,7.0
-
+date,region,team_leader,activity_type,doors_knocked,conversations,pledges,total_monthly_value_eur,active_hours
+2023-01-09,Metro Center,Team Lead A,Door to Door,420,126,18,540,6.5
+2023-01-10,West District,Team Lead A,Door to Door,360,104,12,360,6.0
+2023-01-11,North Transit,Team Lead B,Door to Door,390,118,15,450,6.0
+2023-01-12,East Residential,Team Lead B,Door to Door,440,132,16,480,7.0
+2023-02-06,Metro Center,Team Lead A,Door to Door,410,139,21,630,6.5
+2023-02-07,West District,Team Lead A,Door to Door,350,91,10,300,5.5
+2023-02-08,North Transit,Team Lead B,Door to Door,405,121,17,510,6.5
+2023-02-09,East Residential,Team Lead B,Door to Door,430,116,13,390,6.5
+2023-03-13,Metro Center,Team Lead A,Door to Door,450,150,24,720,7.0
+2023-03-14,West District,Team Lead A,Door to Door,370,100,11,330,6.0
+2023-03-15,North Transit,Team Lead B,Door to Door,395,125,18,540,6.0
+2023-03-16,East Residential,Team Lead B,Door to Door,460,129,14,420,7.0
+2023-04-17,Metro Center,Team Lead A,Door to Door,430,146,22,660,6.5
+2023-04-18,West District,Team Lead A,Door to Door,365,96,12,360,6.0
+2023-04-19,North Transit,Team Lead B,Door to Door,410,130,19,570,6.5
+2023-04-20,East Residential,Team Lead B,Door to Door,455,124,15,450,7.0
