@@ -88,7 +88,7 @@ You don't need to know Git to run the toolkit. You need Python 3.10 or newer. Ch
 
 These steps were tried on Windows. On macOS or Linux, use `.venv/bin/python`, `.venv/bin/f2f-kpi` and `.venv/bin/streamlit` in place of the `.\.venv\Scripts\...` paths.
 
-##  your own export
+## Using your own export
 
 1. **See how your columns match.** `f2f-kpi profile my_export.csv` reads the file and suggests which column is the pledge count, which is the hours, and so on. Check the lines it marks "check this one".
 2. **Create a config.** `f2f-kpi init-config my_export.csv -o my_team.yaml` writes a starter config with that mapping filled in.
@@ -226,7 +226,7 @@ Three rules apply everywhere:
 
 A location's target PPH is the average of its row targets weighted by hours worked, and the overall target attainment on the web app's card is total pledges divided by the pledges the targets would have predicted.
 
-##  it from Python
+## Using it from Python
 
 The calculations don't depend on the command line or on Excel.
 
