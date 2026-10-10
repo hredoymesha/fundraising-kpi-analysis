@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f2f-kpi"
+dynamic = ["version"]
+description = "Reusable engine for face-to-face fundraising KPIs: load, map, validate, calculate, classify."
+requires-python = ">=3.10"
+dependencies = ["pandas>=2.2", "openpyxl>=3.1.2", "pyyaml>=6.0.1"]
+
+[project.scripts]
+f2f-kpi = "f2f_kpi.cli:main"
+
+[project.optional-dependencies]
+app = ["streamlit>=1.65", "plotly>=5.24"]  # tested on 1.65
+dev = ["pytest>=8", "streamlit>=1.65", "plotly>=5.24"]
+
+[tool.setuptools.dynamic]
+version = {attr = "f2f_kpi.__version__"}
+
+[tool.setuptools.package-data]
+f2f_kpi = ["templates/*.yaml"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["f2f_kpi*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "app"]

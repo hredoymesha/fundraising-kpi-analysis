@@ -1,0 +1,31 @@
+location_id,location_label,region,location_type,target_pph
+L01,Shopping Centre MA,Metro Center,Stand,1.29
+L02,Shopping Centre MB,Metro Center,Stand,1.23
+L03,Shopping Centre MC,Metro Center,Stand,1.11
+L04,Community Fair MA,Metro Center,Fair,1.67
+L05,Residential Zone MA,Metro Center,Door to Door,2.31
+L06,Residential Zone MB,Metro Center,Door to Door,2.22
+L07,Shopping Centre WA,West District,Stand,1.26
+L08,Shopping Centre WB,West District,Stand,1.18
+L09,Shopping Centre WC,West District,Stand,1.22
+L10,Community Fair WA,West District,Fair,1.75
+L11,Residential Zone WA,West District,Door to Door,2.42
+L12,Residential Zone WB,West District,Door to Door,2.04
+L13,Shopping Centre NA,North Transit,Stand,1.2
+L14,Shopping Centre NB,North Transit,Stand,1.26
+L15,Shopping Centre NC,North Transit,Stand,1.29
+L16,Community Fair NA,North Transit,Fair,1.68
+L17,Residential Zone NA,North Transit,Door to Door,2.05
+L18,Residential Zone NB,North Transit,Door to Door,2.28
+L19,Shopping Centre EA,East Residential,Stand,1.22
+L20,Shopping Centre EB,East Residential,Stand,1.17
+L21,Shopping Centre EC,East Residential,Stand,1.22
+L22,Community Fair EA,East Residential,Fair,1.79
+L23,Residential Zone EA,East Residential,Door to Door,2.09
+L24,Residential Zone EB,East Residential,Door to Door,2.22
+L25,Shopping Centre SA,South Campus,Stand,1.31
+L26,Shopping Centre SB,South Campus,Stand,1.24
+L27,Shopping Centre SC,South Campus,Stand,1.11
+L28,Community Fair SA,South Campus,Fair,1.94
+L29,Residential Zone SA,South Campus,Door to Door,2.31
+L30,Residential Zone SB,South Campus,Door to Door,2.32

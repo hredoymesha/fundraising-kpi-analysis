@@ -1,0 +1,66 @@
+# f2f-kpi configuration.
+#
+# Copy this file, change the paths and column names to match your own export, and run:
+#   f2f-kpi validate --config my_config.yaml     (check the data first)
+#   f2f-kpi run --config my_config.yaml          (write the Excel report)
+# Paths are relative to this file. Lines starting with # are examples; remove the # to use them.
+
+inputs:
+  activity: data/activity.csv        # one row per shift or day: pledges, hours, and so on (.csv or .xlsx)
+  # locations: data/locations.csv    # one row per location with its target PPH; needed for the Locations sheet
+  # location_weekly: data/weekly.csv # optional: location results already summed by week
+  # fundraisers: data/fundraisers.csv  # optional: lets the check flag unknown fundraiser IDs
+  #
+  # For Excel files, say which sheet and where the header sits:
+  # activity: {path: data/export.xlsx, sheet: Daily, header_row: 3}
+  # For CSV files with unusual settings:
+  # activity: {path: data/export.csv, delimiter: ";", encoding: latin-1}
+
+# Tell the toolkit which of your columns is which. List only the ones whose names differ from ours.
+# The left side is our field name; the right side is the header in your file (or a list of headers to try).
+# Not sure? `f2f-kpi profile your_file.csv` suggests a mapping.
+columns: {}
+  # activity:
+  #   region: ["Area", "Region"]
+  #   pledges: "Sign-ups"
+  #   active_hours: "Hours worked"
+  #   doors_knocked: "Doors"
+  #   conversations: "Conversations"
+  #   total_monthly_value_eur: "Monthly EUR"
+  #   date: "Date"
+
+# Number and date formats, if your export is not in the usual style.
+formats:
+  decimal: "."                       # use "," if 4.5 is written 4,5
+  # date: "%d.%m.%Y"                 # leave out for dates like 2024-03-31
+
+# Translate your wording into ours, e.g. if you write "Door" where we expect "Door to Door".
+# value_maps:
+#   activity:
+#     activity_type: {"Door": "Door to Door"}
+
+validation:
+  max_hours_per_row: 14              # more hours than this on one row looks like a typo
+  max_value_per_pledge: 100          # EUR per month, per pledge
+  # expected_date_range: ["2024-01-01", "2024-03-31"]   # without this, dates far from the median are flagged
+  achieved_pph_tolerance: 0.01
+  # Decide what each kind of problem does: error drops the row, warning keeps it, ignore stays quiet.
+  # severity:
+  #   implausible_hours: error
+  #   unknown_fundraiser_id: ignore
+
+classification:
+  min_hours: 20                      # a location with fewer total hours is labelled "Insufficient data"
+  tiers:                             # share of target PPH; each minimum is inclusive
+    - {label: "Scale or repeat",         min: 1.00}
+    - {label: "Keep and monitor",        min: 0.75}
+    - {label: "Review before repeating", min: 0.0}
+  # Stricter or looser bars for one kind of location:
+  # tiers_by_type:
+  #   Fair:
+  #     - {label: "Scale or repeat",         min: 1.20}
+  #     - {label: "Review before repeating", min: 0.0}
+
+report:
+  trend_period: week                 # week or month
+  # dimensions: [activity_type, fundraiser_id]   # the breakdowns on the By Dimension sheet
