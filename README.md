@@ -55,7 +55,40 @@ After installing, the shorter `f2f-kpi` command does the same thing as `python -
 
 The sample shifts contain a handful of deliberate mistakes so you can see the checks at work. They are listed in `data/sample/injected_errors.csv`.
 
-## Using your own export
+## Try it without Git
+
+You don't need to know Git to run the toolkit. You need Python 3.10 or newer. Check with `python --version`; if it isn't installed, get it from python.org and tick "Add python.exe to PATH" in the installer.
+
+1. Open the [Releases page](https://github.com/hredoymesha/fundraising-kpi-analysis/releases), choose the latest release, and download **Source code (zip)**.
+2. Extract it. Windows may create a folder inside a folder of the same name. Open the inner one, the one that contains `README.md` and `pyproject.toml`.
+3. Open PowerShell in that folder (in File Explorer, click the address bar, type `powershell` and press Enter) and run:
+
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -e ".[app]"
+   ```
+
+   This creates a private Python environment and installs the toolkit and the web app. It takes a minute or two.
+
+4. Build a report from the sample data:
+
+   ```powershell
+   .\.venv\Scripts\f2f-kpi.exe report data/sample/shifts.csv --config config/default_mapping.yaml
+   ```
+
+   `f2f_kpi_report.xlsx` appears in the folder. Open it in Excel.
+
+5. Or start the web app:
+
+   ```powershell
+   .\.venv\Scripts\streamlit.exe run app/streamlit_app.py --server.address localhost --browser.gatherUsageStats false
+   ```
+
+   Open `http://localhost:8501`, press **Try it with sample data**, and look around. Press `Ctrl+C` in PowerShell to stop it.
+
+These steps were tried on Windows. On macOS or Linux, use `.venv/bin/python`, `.venv/bin/f2f-kpi` and `.venv/bin/streamlit` in place of the `.\.venv\Scripts\...` paths.
+
+##  your own export
 
 1. **See how your columns match.** `f2f-kpi profile my_export.csv` reads the file and suggests which column is the pledge count, which is the hours, and so on. Check the lines it marks "check this one".
 2. **Create a config.** `f2f-kpi init-config my_export.csv -o my_team.yaml` writes a starter config with that mapping filled in.
@@ -193,7 +226,7 @@ Three rules apply everywhere:
 
 A location's target PPH is the average of its row targets weighted by hours worked, and the overall target attainment on the web app's card is total pledges divided by the pledges the targets would have predicted.
 
-## Using it from Python
+##  it from Python
 
 The calculations don't depend on the command line or on Excel.
 
