@@ -1,0 +1,15 @@
+file,csv_line,key,rule,detail
+shifts.csv,210,S00295,conversations_gt_doors,conversations 58 -> 235 (doors 215)
+shifts.csv,569,S00913,pledges_gt_conversations,pledges 13 -> 81 (conversations 75)
+shifts.csv,27,S00699,negative_hours,active_hours -> -6.0
+shifts.csv,1486,S01511,zero_hours_with_activity,active_hours -> 0 with pledges=12
+shifts.csv,738,S01017,missing_required_value,active_hours blank
+shifts.csv,192,S01145,implausible_hours,active_hours -> 62.0
+shifts.csv,596,S01242,unparseable_date,date -> 2024-13-45
+shifts.csv,1224,S01100,non_numeric_value,pledges -> 'n/a'
+shifts.csv,386,S00850,inconsistent_region_label,region 'West District' -> 'west district '
+shifts.csv,651,S01109,unknown_fundraiser_id,fundraiser_id -> F999 (not in fundraisers.csv)
+shifts.csv,1206,S00989,implausible_value_per_pledge,total_monthly_value_eur 50 -> 1000
+shifts.csv,1194,S01386,date_out_of_range,date -> 2025-04-27 (outside the 12-week window)
+shifts.csv,343|726,S00246,exact_duplicate_row,row appended a second time
+location_weekly.csv,20,2024-W02/L19,achieved_pph_mismatch,achieved_pph 1.38 -> 2.88 (pledges/hours disagree)

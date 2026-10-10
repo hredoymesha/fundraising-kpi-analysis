@@ -1,0 +1,10 @@
+# Local settings for the web app. Run it from the repository root so Streamlit finds this file.
+[browser]
+gatherUsageStats = false      # no usage statistics sent anywhere
+
+[client]
+showErrorDetails = "type"     # error pages name the exception type but never show message text from the data
+
+[server]
+address = "localhost"        # listen on this computer only, not on the network
+maxUploadSize = 50            # MB per file

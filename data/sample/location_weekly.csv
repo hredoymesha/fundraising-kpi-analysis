@@ -1,0 +1,356 @@
+period,location_id,location_label,location_type,pledges,hours,target_pph,achieved_pph,monthly_pledge_share,regular_giving_share,avg_supporter_age,avg_monthly_donation_eur
+2024-W02,L01,Shopping Centre MA,Stand,18,20.5,1.29,0.88,0.83,0.56,37.2,18.72
+2024-W02,L02,Shopping Centre MB,Stand,18,18.5,1.23,0.97,0.61,0.61,33.3,15.11
+2024-W02,L03,Shopping Centre MC,Stand,66,55.5,1.11,1.19,0.71,0.74,36.7,17.0
+2024-W02,L04,Community Fair MA,Fair,107,37.0,1.67,2.89,0.67,0.57,42.3,17.15
+2024-W02,L05,Residential Zone MA,Door to Door,30,11.5,2.31,2.61,0.9,0.63,35.2,17.23
+2024-W02,L06,Residential Zone MB,Door to Door,58,25.5,2.22,2.27,0.83,0.66,38.0,17.17
+2024-W02,L07,Shopping Centre WA,Stand,23,27.5,1.26,0.84,0.65,0.7,40.4,18.13
+2024-W02,L08,Shopping Centre WB,Stand,32,35.5,1.18,0.9,0.69,0.72,35.6,19.09
+2024-W02,L09,Shopping Centre WC,Stand,3,6.5,1.22,0.46,0.67,0.67,38.6,24.0
+2024-W02,L10,Community Fair WA,Fair,20,12.0,1.75,1.67,0.8,0.7,41.8,17.0
+2024-W02,L11,Residential Zone WA,Door to Door,117,38.0,2.42,3.08,0.91,0.62,36.2,17.27
+2024-W02,L12,Residential Zone WB,Door to Door,79,34.0,2.04,2.32,0.87,0.59,38.4,17.15
+2024-W02,L13,Shopping Centre NA,Stand,16,20.0,1.2,0.8,0.69,0.69,35.0,14.5
+2024-W02,L14,Shopping Centre NB,Stand,13,7.5,1.26,1.73,0.69,0.62,38.6,17.85
+2024-W02,L15,Shopping Centre NC,Stand,17,19.0,1.29,0.89,0.76,0.47,36.5,18.76
+2024-W02,L16,Community Fair NA,Fair,39,19.5,1.68,2.0,0.62,0.54,37.7,18.05
+2024-W02,L17,Residential Zone NA,Door to Door,91,19.0,2.05,4.79,0.87,0.62,38.1,17.81
+2024-W02,L18,Residential Zone NB,Door to Door,139,45.0,2.28,3.09,0.86,0.63,36.5,17.06
+2024-W02,L19,Shopping Centre EA,Stand,54,39.0,1.22,2.88,0.78,0.7,35.8,16.54
+2024-W02,L20,Shopping Centre EB,Stand,6,6.0,1.17,1.0,0.67,0.5,42.0,12.67
+2024-W02,L22,Community Fair EA,Fair,62,18.5,1.79,3.35,0.84,0.61,40.8,17.08
+2024-W02,L23,Residential Zone EA,Door to Door,58,18.0,2.09,3.22,0.93,0.62,36.1,16.78
+2024-W02,L24,Residential Zone EB,Door to Door,148,41.5,2.22,3.57,0.9,0.65,36.2,17.18
+2024-W02,L25,Shopping Centre SA,Stand,22,39.5,1.31,0.56,0.73,0.77,33.6,16.55
+2024-W02,L26,Shopping Centre SB,Stand,22,24.5,1.24,0.9,0.82,0.64,37.4,15.41
+2024-W02,L27,Shopping Centre SC,Stand,49,39.5,1.11,1.24,0.8,0.65,39.1,18.47
+2024-W02,L28,Community Fair SA,Fair,36,20.0,1.94,1.8,0.78,0.58,43.0,18.22
+2024-W02,L29,Residential Zone SA,Door to Door,14,14.0,2.31,1.0,1.0,0.64,38.2,18.0
+2024-W02,L30,Residential Zone SB,Door to Door,39,14.0,2.32,2.79,0.92,0.51,36.5,18.23
+2024-W03,L01,Shopping Centre MA,Stand,43,43.5,1.29,0.99,0.67,0.6,37.1,17.7
+2024-W03,L02,Shopping Centre MB,Stand,70,57.0,1.23,1.23,0.71,0.69,35.6,17.06
+2024-W03,L03,Shopping Centre MC,Stand,44,25.5,1.11,1.73,0.68,0.73,35.7,18.95
+2024-W03,L04,Community Fair MA,Fair,29,12.5,1.67,2.32,0.83,0.41,40.5,17.72
+2024-W03,L05,Residential Zone MA,Door to Door,49,18.5,2.31,2.65,0.84,0.63,35.9,17.43
+2024-W03,L06,Residential Zone MB,Door to Door,74,25.5,2.22,2.9,0.89,0.55,36.7,17.39
+2024-W03,L07,Shopping Centre WA,Stand,18,25.5,1.26,0.71,0.83,0.72,38.6,17.17
+2024-W03,L08,Shopping Centre WB,Stand,22,19.0,1.18,1.16,0.55,0.73,37.6,16.41
+2024-W03,L09,Shopping Centre WC,Stand,10,19.0,1.22,0.53,0.6,0.6,33.4,16.5
+2024-W03,L10,Community Fair WA,Fair,49,32.5,1.75,1.51,0.59,0.67,42.0,16.82
+2024-W03,L11,Residential Zone WA,Door to Door,35,6.5,2.42,5.38,0.91,0.57,39.5,16.89
+2024-W03,L12,Residential Zone WB,Door to Door,45,23.5,2.04,1.91,0.93,0.64,36.3,18.62
+2024-W03,L13,Shopping Centre NA,Stand,4,5.0,1.2,0.8,1.0,0.5,43.2,18.75
+2024-W03,L14,Shopping Centre NB,Stand,32,35.5,1.26,0.9,0.66,0.59,36.5,16.0
+2024-W03,L15,Shopping Centre NC,Stand,20,33.0,1.29,0.61,0.7,0.65,39.5,17.4
+2024-W03,L16,Community Fair NA,Fair,25,18.5,1.68,1.35,0.72,0.44,41.2,15.76
+2024-W03,L17,Residential Zone NA,Door to Door,94,27.5,2.05,3.42,0.91,0.63,38.1,16.95
+2024-W03,L18,Residential Zone NB,Door to Door,134,31.0,2.28,4.32,0.9,0.62,36.0,17.0
+2024-W03,L19,Shopping Centre EA,Stand,22,12.0,1.22,1.83,0.68,0.59,34.2,17.77
+2024-W03,L21,Shopping Centre EC,Stand,18,23.5,1.22,0.77,0.78,0.61,35.6,16.56
+2024-W03,L22,Community Fair EA,Fair,60,19.0,1.79,3.16,0.8,0.55,41.0,16.68
+2024-W03,L23,Residential Zone EA,Door to Door,53,26.0,2.09,2.04,0.87,0.57,36.6,16.91
+2024-W03,L24,Residential Zone EB,Door to Door,128,30.5,2.22,4.2,0.91,0.6,36.3,16.88
+2024-W03,L25,Shopping Centre SA,Stand,13,12.5,1.31,1.04,0.77,0.62,37.7,18.85
+2024-W03,L26,Shopping Centre SB,Stand,17,26.0,1.24,0.65,0.65,0.47,36.1,18.18
+2024-W03,L27,Shopping Centre SC,Stand,22,25.5,1.11,0.86,0.82,0.68,36.5,16.09
+2024-W03,L28,Community Fair SA,Fair,45,25.0,1.94,1.8,0.76,0.49,44.3,16.49
+2024-W03,L29,Residential Zone SA,Door to Door,63,32.5,2.31,1.94,0.92,0.63,35.5,16.62
+2024-W03,L30,Residential Zone SB,Door to Door,85,27.5,2.32,3.09,0.89,0.65,36.6,18.01
+2024-W04,L01,Shopping Centre MA,Stand,26,17.5,1.29,1.49,0.73,0.85,38.1,15.65
+2024-W04,L02,Shopping Centre MB,Stand,14,11.0,1.23,1.27,0.43,0.71,36.0,14.79
+2024-W04,L03,Shopping Centre MC,Stand,79,44.5,1.11,1.78,0.73,0.72,35.0,17.9
+2024-W04,L04,Community Fair MA,Fair,116,33.5,1.67,3.46,0.68,0.53,41.9,15.66
+2024-W04,L05,Residential Zone MA,Door to Door,92,23.0,2.31,4.0,0.91,0.63,36.2,18.49
+2024-W04,L06,Residential Zone MB,Door to Door,109,34.5,2.22,3.16,0.94,0.66,36.5,18.05
+2024-W04,L07,Shopping Centre WA,Stand,11,19.5,1.26,0.56,0.64,0.36,27.0,13.82
+2024-W04,L08,Shopping Centre WB,Stand,58,50.0,1.18,1.16,0.78,0.72,38.8,17.76
+2024-W04,L09,Shopping Centre WC,Stand,9,14.5,1.22,0.62,0.56,0.56,26.7,18.89
+2024-W04,L10,Community Fair WA,Fair,24,7.5,1.75,3.2,0.67,0.58,38.9,18.17
+2024-W04,L11,Residential Zone WA,Door to Door,138,40.5,2.42,3.41,0.91,0.6,37.8,17.28
+2024-W04,L12,Residential Zone WB,Door to Door,26,13.0,2.04,2.0,0.88,0.62,38.1,16.5
+2024-W04,L13,Shopping Centre NA,Stand,23,22.5,1.2,1.02,0.52,0.65,37.8,16.0
+2024-W04,L14,Shopping Centre NB,Stand,9,20.0,1.26,0.45,0.67,0.44,36.9,20.22
+2024-W04,L15,Shopping Centre NC,Stand,20,24.5,1.29,0.82,0.8,0.65,40.1,17.35
+2024-W04,L16,Community Fair NA,Fair,33,19.5,1.68,1.69,0.7,0.45,42.6,17.3
+2024-W04,L17,Residential Zone NA,Door to Door,106,28.0,2.05,3.79,0.9,0.58,37.0,17.58
+2024-W04,L18,Residential Zone NB,Door to Door,94,30.5,2.28,3.08,0.94,0.57,37.7,16.81
+2024-W04,L19,Shopping Centre EA,Stand,45,29.0,1.22,1.55,0.73,0.62,37.5,17.36
+2024-W04,L20,Shopping Centre EB,Stand,17,24.5,1.17,0.69,0.82,0.53,34.8,15.88
+2024-W04,L21,Shopping Centre EC,Stand,17,25.0,1.22,0.68,0.59,0.82,37.9,16.41
+2024-W04,L22,Community Fair EA,Fair,59,19.0,1.79,3.11,0.78,0.59,41.4,17.32
+2024-W04,L23,Residential Zone EA,Door to Door,76,37.5,2.09,2.03,0.88,0.63,35.7,17.05
+2024-W04,L24,Residential Zone EB,Door to Door,141,29.5,2.22,4.78,0.89,0.62,36.9,17.23
+2024-W04,L25,Shopping Centre SA,Stand,17,20.5,1.31,0.83,0.71,0.65,39.0,17.35
+2024-W04,L26,Shopping Centre SB,Stand,14,39.0,1.24,0.36,0.57,0.57,41.9,19.93
+2024-W04,L27,Shopping Centre SC,Stand,23,17.5,1.11,1.31,0.65,0.57,38.3,16.96
+2024-W04,L28,Community Fair SA,Fair,10,6.0,1.94,1.67,0.7,0.3,42.8,17.4
+2024-W04,L29,Residential Zone SA,Door to Door,18,10.5,2.31,1.71,0.94,0.61,37.5,17.83
+2024-W04,L30,Residential Zone SB,Door to Door,91,31.5,2.32,2.89,0.9,0.66,36.7,17.9
+2024-W05,L01,Shopping Centre MA,Stand,25,24.0,1.29,1.04,0.72,0.56,37.2,19.64
+2024-W05,L02,Shopping Centre MB,Stand,10,12.0,1.23,0.83,0.6,0.5,37.4,17.7
+2024-W05,L03,Shopping Centre MC,Stand,60,36.0,1.11,1.67,0.78,0.73,37.4,16.58
+2024-W05,L04,Community Fair MA,Fair,54,18.5,1.67,2.92,0.61,0.37,41.5,16.69
+2024-W05,L05,Residential Zone MA,Door to Door,115,34.5,2.31,3.33,0.9,0.64,37.9,17.63
+2024-W05,L06,Residential Zone MB,Door to Door,96,32.5,2.22,2.95,0.89,0.62,37.4,17.38
+2024-W05,L07,Shopping Centre WA,Stand,21,25.0,1.26,0.84,0.86,0.67,38.3,16.14
+2024-W05,L08,Shopping Centre WB,Stand,42,38.0,1.18,1.11,0.83,0.79,36.6,15.76
+2024-W05,L09,Shopping Centre WC,Stand,19,33.0,1.22,0.58,0.58,0.42,36.6,18.16
+2024-W05,L10,Community Fair WA,Fair,41,31.5,1.75,1.3,0.78,0.46,41.4,15.9
+2024-W05,L11,Residential Zone WA,Door to Door,86,28.0,2.42,3.07,0.92,0.65,36.3,17.57
+2024-W05,L12,Residential Zone WB,Door to Door,40,24.0,2.04,1.67,0.93,0.68,36.7,16.48
+2024-W05,L13,Shopping Centre NA,Stand,35,36.5,1.2,0.96,0.74,0.63,39.9,16.74
+2024-W05,L14,Shopping Centre NB,Stand,12,18.0,1.26,0.67,0.75,0.58,34.5,13.92
+2024-W05,L15,Shopping Centre NC,Stand,19,23.5,1.29,0.81,0.74,0.74,36.3,15.74
+2024-W05,L16,Community Fair NA,Fair,20,17.0,1.68,1.18,0.85,0.75,40.0,15.65
+2024-W05,L17,Residential Zone NA,Door to Door,80,24.0,2.05,3.33,0.93,0.64,37.6,17.25
+2024-W05,L18,Residential Zone NB,Door to Door,89,31.0,2.28,2.87,0.92,0.58,37.4,17.18
+2024-W05,L19,Shopping Centre EA,Stand,30,23.0,1.22,1.3,0.63,0.7,38.8,14.97
+2024-W05,L20,Shopping Centre EB,Stand,31,36.0,1.17,0.86,0.74,0.68,36.6,19.23
+2024-W05,L21,Shopping Centre EC,Stand,15,17.5,1.22,0.86,0.8,0.6,41.3,17.07
+2024-W05,L22,Community Fair EA,Fair,58,22.0,1.79,2.64,0.71,0.47,44.0,17.0
+2024-W05,L23,Residential Zone EA,Door to Door,112,43.5,2.09,2.57,0.86,0.62,36.8,16.64
+2024-W05,L24,Residential Zone EB,Door to Door,71,21.5,2.22,3.3,0.86,0.82,37.1,16.76
+2024-W05,L25,Shopping Centre SA,Stand,18,31.5,1.31,0.57,0.39,0.67,32.8,19.11
+2024-W05,L26,Shopping Centre SB,Stand,6,12.5,1.24,0.48,0.67,0.67,38.2,12.0
+2024-W05,L27,Shopping Centre SC,Stand,32,30.5,1.11,1.05,0.59,0.72,36.2,18.41
+2024-W05,L28,Community Fair SA,Fair,40,20.0,1.94,2.0,0.88,0.47,43.5,17.18
+2024-W05,L29,Residential Zone SA,Door to Door,35,19.5,2.31,1.79,0.94,0.66,37.9,16.89
+2024-W05,L30,Residential Zone SB,Door to Door,119,50.0,2.32,2.38,0.89,0.62,37.9,16.94
+2024-W06,L01,Shopping Centre MA,Stand,24,18.0,1.29,1.33,0.71,0.71,41.0,18.5
+2024-W06,L02,Shopping Centre MB,Stand,51,34.0,1.23,1.5,0.63,0.45,38.7,18.31
+2024-W06,L03,Shopping Centre MC,Stand,35,23.5,1.11,1.49,0.69,0.66,38.6,16.49
+2024-W06,L04,Community Fair MA,Fair,118,37.5,1.67,3.15,0.68,0.53,39.5,16.81
+2024-W06,L05,Residential Zone MA,Door to Door,102,29.5,2.31,3.46,0.9,0.61,37.8,17.31
+2024-W06,L06,Residential Zone MB,Door to Door,137,37.5,2.22,3.65,0.89,0.67,35.6,18.01
+2024-W06,L07,Shopping Centre WA,Stand,12,12.5,1.26,0.96,0.58,0.58,36.5,16.0
+2024-W06,L08,Shopping Centre WB,Stand,25,31.5,1.18,0.79,0.72,0.6,37.2,18.72
+2024-W06,L09,Shopping Centre WC,Stand,31,39.5,1.22,0.78,0.71,0.48,39.3,15.32
+2024-W06,L10,Community Fair WA,Fair,19,13.5,1.75,1.41,0.74,0.53,45.6,19.16
+2024-W06,L11,Residential Zone WA,Door to Door,24,5.0,2.42,4.8,0.92,0.71,37.4,16.71
+2024-W06,L12,Residential Zone WB,Door to Door,10,6.0,2.04,1.67,0.8,0.7,34.8,16.0
+2024-W06,L13,Shopping Centre NA,Stand,27,34.0,1.2,0.79,0.78,0.85,35.4,15.96
+2024-W06,L14,Shopping Centre NB,Stand,7,6.5,1.26,1.08,0.71,0.29,38.0,15.29
+2024-W06,L15,Shopping Centre NC,Stand,28,33.5,1.29,0.84,0.61,0.61,36.3,17.04
+2024-W06,L16,Community Fair NA,Fair,59,51.0,1.68,1.16,0.66,0.53,39.0,17.53
+2024-W06,L17,Residential Zone NA,Door to Door,135,40.0,2.05,3.38,0.89,0.6,36.5,17.32
+2024-W06,L18,Residential Zone NB,Door to Door,63,28.5,2.28,2.21,0.95,0.71,35.3,15.32
+2024-W06,L19,Shopping Centre EA,Stand,61,41.0,1.22,1.49,0.72,0.75,37.0,17.46
+2024-W06,L20,Shopping Centre EB,Stand,18,26.0,1.17,0.69,0.61,0.78,37.1,16.89
+2024-W06,L21,Shopping Centre EC,Stand,57,61.5,1.22,0.93,0.72,0.7,36.5,16.88
+2024-W06,L22,Community Fair EA,Fair,75,19.0,1.79,3.95,0.71,0.53,40.9,16.45
+2024-W06,L23,Residential Zone EA,Door to Door,23,11.0,2.09,2.09,0.87,0.7,38.6,17.35
+2024-W06,L24,Residential Zone EB,Door to Door,71,23.0,2.22,3.09,0.9,0.55,37.3,16.45
+2024-W06,L25,Shopping Centre SA,Stand,18,24.5,1.31,0.73,0.83,0.56,36.2,15.61
+2024-W06,L26,Shopping Centre SB,Stand,6,5.5,1.24,1.09,1.0,0.5,39.5,18.33
+2024-W06,L27,Shopping Centre SC,Stand,40,44.5,1.11,0.9,0.72,0.62,37.3,18.05
+2024-W06,L28,Community Fair SA,Fair,63,32.0,1.94,1.97,0.76,0.46,41.2,16.6
+2024-W06,L29,Residential Zone SA,Door to Door,75,29.0,2.31,2.59,0.96,0.55,37.4,17.28
+2024-W06,L30,Residential Zone SB,Door to Door,124,46.0,2.32,2.7,0.92,0.61,36.2,17.65
+2024-W07,L01,Shopping Centre MA,Stand,26,19.5,1.29,1.33,0.69,0.69,38.2,17.77
+2024-W07,L02,Shopping Centre MB,Stand,30,26.0,1.23,1.15,0.77,0.67,36.9,16.63
+2024-W07,L03,Shopping Centre MC,Stand,40,31.0,1.11,1.29,0.7,0.42,36.1,16.95
+2024-W07,L04,Community Fair MA,Fair,43,12.5,1.67,3.44,0.88,0.51,43.1,16.79
+2024-W07,L05,Residential Zone MA,Door to Door,126,39.5,2.31,3.19,0.91,0.61,37.4,16.98
+2024-W07,L06,Residential Zone MB,Door to Door,91,31.5,2.22,2.89,0.93,0.59,37.9,15.93
+2024-W07,L07,Shopping Centre WA,Stand,23,37.5,1.26,0.61,0.7,0.57,36.6,17.7
+2024-W07,L08,Shopping Centre WB,Stand,27,32.0,1.18,0.84,0.74,0.81,34.9,16.7
+2024-W07,L09,Shopping Centre WC,Stand,22,37.0,1.22,0.59,0.41,0.77,33.7,18.36
+2024-W07,L11,Residential Zone WA,Door to Door,123,39.0,2.42,3.15,0.87,0.54,35.7,17.07
+2024-W07,L12,Residential Zone WB,Door to Door,70,35.0,2.04,2.0,0.84,0.61,38.9,16.94
+2024-W07,L13,Shopping Centre NA,Stand,31,30.5,1.2,1.02,0.84,0.52,39.4,17.06
+2024-W07,L14,Shopping Centre NB,Stand,16,30.0,1.26,0.53,0.75,0.62,37.4,17.31
+2024-W07,L15,Shopping Centre NC,Stand,12,13.5,1.29,0.89,0.67,0.58,38.1,16.17
+2024-W07,L16,Community Fair NA,Fair,117,64.5,1.68,1.81,0.7,0.5,42.3,17.42
+2024-W07,L17,Residential Zone NA,Door to Door,34,19.0,2.05,1.79,1.0,0.65,36.4,18.21
+2024-W07,L18,Residential Zone NB,Door to Door,102,33.0,2.28,3.09,0.93,0.7,37.2,16.66
+2024-W07,L19,Shopping Centre EA,Stand,17,13.0,1.22,1.31,0.82,0.59,36.9,17.88
+2024-W07,L20,Shopping Centre EB,Stand,19,25.5,1.17,0.75,0.84,0.79,34.9,15.21
+2024-W07,L21,Shopping Centre EC,Stand,31,43.5,1.22,0.71,0.74,0.74,37.6,16.29
+2024-W07,L22,Community Fair EA,Fair,162,44.0,1.79,3.68,0.75,0.52,42.2,17.48
+2024-W07,L23,Residential Zone EA,Door to Door,22,11.5,2.09,1.91,0.86,0.64,37.0,19.64
+2024-W07,L24,Residential Zone EB,Door to Door,24,6.0,2.22,4.0,0.88,0.71,36.3,16.0
+2024-W07,L25,Shopping Centre SA,Stand,22,36.0,1.31,0.61,0.82,0.59,36.3,16.91
+2024-W07,L26,Shopping Centre SB,Stand,18,26.0,1.24,0.69,0.72,0.72,37.0,18.11
+2024-W07,L27,Shopping Centre SC,Stand,17,18.5,1.11,0.92,0.88,0.71,35.7,14.94
+2024-W07,L28,Community Fair SA,Fair,74,51.5,1.94,1.44,0.66,0.45,42.4,16.42
+2024-W07,L29,Residential Zone SA,Door to Door,34,23.0,2.31,1.48,0.91,0.62,37.1,16.88
+2024-W07,L30,Residential Zone SB,Door to Door,65,29.5,2.32,2.2,0.86,0.58,37.8,16.86
+2024-W08,L01,Shopping Centre MA,Stand,25,17.5,1.29,1.43,0.6,0.64,39.8,18.28
+2024-W08,L02,Shopping Centre MB,Stand,19,17.0,1.23,1.12,0.68,0.63,39.5,18.63
+2024-W08,L03,Shopping Centre MC,Stand,57,38.0,1.11,1.5,0.75,0.74,38.2,17.88
+2024-W08,L04,Community Fair MA,Fair,70,23.0,1.67,3.04,0.74,0.54,41.0,16.51
+2024-W08,L05,Residential Zone MA,Door to Door,63,29.0,2.31,2.17,0.95,0.6,35.9,18.3
+2024-W08,L06,Residential Zone MB,Door to Door,94,31.0,2.22,3.03,0.9,0.61,37.6,16.8
+2024-W08,L07,Shopping Centre WA,Stand,28,31.0,1.26,0.9,0.71,0.54,39.4,18.21
+2024-W08,L08,Shopping Centre WB,Stand,24,23.0,1.18,1.04,0.71,0.62,35.9,16.08
+2024-W08,L09,Shopping Centre WC,Stand,9,16.5,1.22,0.55,0.56,0.56,35.8,18.89
+2024-W08,L10,Community Fair WA,Fair,37,25.0,1.75,1.48,0.7,0.62,42.2,17.05
+2024-W08,L11,Residential Zone WA,Door to Door,60,25.5,2.42,2.35,0.92,0.7,36.5,17.77
+2024-W08,L12,Residential Zone WB,Door to Door,40,34.0,2.04,1.18,0.93,0.55,36.7,16.4
+2024-W08,L13,Shopping Centre NA,Stand,35,29.5,1.2,1.19,0.71,0.43,36.2,16.74
+2024-W08,L14,Shopping Centre NB,Stand,16,13.5,1.26,1.19,0.56,0.56,33.1,14.38
+2024-W08,L15,Shopping Centre NC,Stand,41,45.5,1.29,0.9,0.76,0.63,38.4,16.0
+2024-W08,L16,Community Fair NA,Fair,39,29.5,1.68,1.32,0.77,0.56,42.1,17.49
+2024-W08,L17,Residential Zone NA,Door to Door,45,13.0,2.05,3.46,0.84,0.49,37.7,15.58
+2024-W08,L18,Residential Zone NB,Door to Door,74,31.5,2.28,2.35,0.89,0.61,37.0,17.0
+2024-W08,L19,Shopping Centre EA,Stand,33,32.5,1.22,1.02,0.64,0.61,39.6,14.79
+2024-W08,L20,Shopping Centre EB,Stand,23,29.0,1.17,0.79,0.7,0.7,34.9,15.96
+2024-W08,L21,Shopping Centre EC,Stand,11,12.5,1.22,0.88,0.73,0.64,35.4,16.64
+2024-W08,L22,Community Fair EA,Fair,99,37.0,1.79,2.68,0.76,0.49,42.5,17.51
+2024-W08,L23,Residential Zone EA,Door to Door,46,17.5,2.09,2.63,0.85,0.61,36.1,18.02
+2024-W08,L24,Residential Zone EB,Door to Door,78,27.0,2.22,2.89,0.9,0.58,38.0,17.21
+2024-W08,L25,Shopping Centre SA,Stand,14,19.5,1.31,0.72,0.71,0.5,33.0,16.21
+2024-W08,L26,Shopping Centre SB,Stand,45,51.5,1.24,0.87,0.71,0.56,37.1,16.53
+2024-W08,L27,Shopping Centre SC,Stand,54,36.0,1.11,1.5,0.65,0.57,37.3,15.5
+2024-W08,L28,Community Fair SA,Fair,44,14.5,1.94,3.03,0.77,0.39,41.6,17.05
+2024-W08,L29,Residential Zone SA,Door to Door,25,13.5,2.31,1.85,0.96,0.48,37.0,16.6
+2024-W08,L30,Residential Zone SB,Door to Door,64,26.0,2.32,2.46,0.86,0.61,37.3,17.25
+2024-W09,L01,Shopping Centre MA,Stand,36,30.0,1.29,1.2,0.64,0.5,37.2,17.25
+2024-W09,L02,Shopping Centre MB,Stand,50,31.0,1.23,1.61,0.72,0.68,40.3,16.9
+2024-W09,L03,Shopping Centre MC,Stand,26,20.0,1.11,1.3,0.73,0.73,40.8,17.15
+2024-W09,L04,Community Fair MA,Fair,64,26.5,1.67,2.42,0.55,0.58,43.5,16.2
+2024-W09,L05,Residential Zone MA,Door to Door,71,24.0,2.31,2.96,0.9,0.65,36.1,17.28
+2024-W09,L06,Residential Zone MB,Door to Door,58,21.5,2.22,2.7,0.9,0.57,38.8,17.02
+2024-W09,L07,Shopping Centre WA,Stand,13,13.0,1.26,1.0,0.31,0.38,35.9,18.62
+2024-W09,L08,Shopping Centre WB,Stand,16,23.0,1.18,0.7,0.75,0.75,35.7,19.38
+2024-W09,L09,Shopping Centre WC,Stand,21,32.0,1.22,0.66,0.57,0.57,38.1,15.95
+2024-W09,L10,Community Fair WA,Fair,58,44.5,1.75,1.3,0.67,0.57,41.9,17.5
+2024-W09,L11,Residential Zone WA,Door to Door,95,29.0,2.42,3.28,0.83,0.65,36.2,17.91
+2024-W09,L12,Residential Zone WB,Door to Door,43,24.5,2.04,1.76,0.93,0.63,38.1,16.74
+2024-W09,L13,Shopping Centre NA,Stand,39,35.0,1.2,1.11,0.67,0.72,39.8,18.23
+2024-W09,L14,Shopping Centre NB,Stand,28,35.5,1.26,0.79,0.68,0.5,40.4,16.68
+2024-W09,L15,Shopping Centre NC,Stand,31,31.5,1.29,0.98,0.58,0.45,34.8,16.74
+2024-W09,L16,Community Fair NA,Fair,9,6.0,1.68,1.5,0.67,0.44,36.7,14.11
+2024-W09,L17,Residential Zone NA,Door to Door,132,38.5,2.05,3.43,0.92,0.64,35.3,16.72
+2024-W09,L18,Residential Zone NB,Door to Door,73,25.5,2.28,2.86,0.96,0.6,36.7,17.96
+2024-W09,L19,Shopping Centre EA,Stand,35,27.5,1.22,1.27,0.69,0.69,36.1,19.49
+2024-W09,L20,Shopping Centre EB,Stand,23,18.0,1.17,1.28,0.61,0.43,39.1,17.22
+2024-W09,L21,Shopping Centre EC,Stand,7,6.5,1.22,1.08,0.86,0.86,39.0,21.0
+2024-W09,L22,Community Fair EA,Fair,141,45.0,1.79,3.13,0.68,0.52,41.2,16.76
+2024-W09,L23,Residential Zone EA,Door to Door,57,27.0,2.09,2.11,0.91,0.72,36.3,17.68
+2024-W09,L24,Residential Zone EB,Door to Door,225,52.0,2.22,4.33,0.88,0.65,36.9,16.8
+2024-W09,L25,Shopping Centre SA,Stand,20,38.0,1.31,0.53,0.85,0.45,36.7,18.3
+2024-W09,L26,Shopping Centre SB,Stand,20,22.5,1.24,0.89,0.6,0.75,37.9,17.65
+2024-W09,L27,Shopping Centre SC,Stand,34,18.0,1.11,1.89,0.79,0.59,38.6,16.24
+2024-W09,L28,Community Fair SA,Fair,34,18.5,1.94,1.84,0.68,0.5,41.9,16.47
+2024-W09,L29,Residential Zone SA,Door to Door,71,48.5,2.31,1.46,0.9,0.55,37.9,16.75
+2024-W09,L30,Residential Zone SB,Door to Door,93,32.0,2.32,2.91,0.9,0.59,37.3,16.8
+2024-W10,L01,Shopping Centre MA,Stand,38,31.0,1.29,1.23,0.76,0.55,36.6,17.34
+2024-W10,L02,Shopping Centre MB,Stand,25,23.5,1.23,1.06,0.68,0.68,33.0,16.88
+2024-W10,L03,Shopping Centre MC,Stand,29,26.0,1.11,1.12,0.66,0.62,33.8,17.34
+2024-W10,L04,Community Fair MA,Fair,164,52.5,1.67,3.12,0.73,0.5,41.7,17.09
+2024-W10,L05,Residential Zone MA,Door to Door,63,22.0,2.31,2.86,0.83,0.56,36.4,17.52
+2024-W10,L06,Residential Zone MB,Door to Door,78,29.5,2.22,2.64,0.9,0.63,37.2,16.59
+2024-W10,L07,Shopping Centre WA,Stand,46,40.0,1.26,1.15,0.74,0.67,36.6,17.13
+2024-W10,L08,Shopping Centre WB,Stand,21,18.5,1.18,1.14,0.81,0.52,38.0,15.05
+2024-W10,L09,Shopping Centre WC,Stand,12,17.0,1.22,0.71,0.83,0.67,37.0,17.0
+2024-W10,L10,Community Fair WA,Fair,40,29.0,1.75,1.38,0.68,0.42,44.1,16.65
+2024-W10,L11,Residential Zone WA,Door to Door,42,11.5,2.42,3.65,0.93,0.64,38.4,18.4
+2024-W10,L12,Residential Zone WB,Door to Door,27,11.0,2.04,2.45,0.89,0.67,39.3,18.22
+2024-W10,L13,Shopping Centre NA,Stand,32,35.5,1.2,0.9,0.66,0.66,35.1,15.97
+2024-W10,L14,Shopping Centre NB,Stand,19,26.0,1.26,0.73,0.79,0.68,36.4,17.47
+2024-W10,L15,Shopping Centre NC,Stand,10,18.0,1.29,0.56,0.7,0.7,39.0,17.2
+2024-W10,L16,Community Fair NA,Fair,24,22.0,1.68,1.09,0.75,0.5,43.5,14.92
+2024-W10,L17,Residential Zone NA,Door to Door,72,25.5,2.05,2.82,0.89,0.6,37.5,17.67
+2024-W10,L18,Residential Zone NB,Door to Door,74,25.5,2.28,2.9,0.85,0.72,35.8,17.51
+2024-W10,L19,Shopping Centre EA,Stand,47,32.0,1.22,1.47,0.66,0.6,37.1,17.64
+2024-W10,L20,Shopping Centre EB,Stand,47,43.0,1.17,1.09,0.77,0.7,37.9,18.26
+2024-W10,L21,Shopping Centre EC,Stand,23,25.0,1.22,0.92,0.74,0.7,36.9,17.09
+2024-W10,L22,Community Fair EA,Fair,129,30.5,1.79,4.23,0.66,0.51,42.3,17.38
+2024-W10,L23,Residential Zone EA,Door to Door,29,12.5,2.09,2.32,0.9,0.69,36.6,18.07
+2024-W10,L24,Residential Zone EB,Door to Door,54,12.0,2.22,4.5,0.85,0.5,36.7,16.41
+2024-W10,L25,Shopping Centre SA,Stand,23,33.5,1.31,0.69,0.74,0.61,34.2,19.43
+2024-W10,L26,Shopping Centre SB,Stand,7,6.5,1.24,1.08,0.86,0.86,38.7,18.57
+2024-W10,L27,Shopping Centre SC,Stand,53,35.5,1.11,1.49,0.79,0.47,37.5,18.17
+2024-W10,L28,Community Fair SA,Fair,22,10.5,1.94,2.1,0.68,0.68,40.3,18.27
+2024-W10,L29,Residential Zone SA,Door to Door,87,50.5,2.31,1.72,0.9,0.62,38.2,17.47
+2024-W10,L30,Residential Zone SB,Door to Door,73,32.0,2.32,2.28,0.89,0.62,36.9,16.75
+2024-W11,L01,Shopping Centre MA,Stand,49,34.5,1.29,1.42,0.63,0.61,38.3,17.55
+2024-W11,L02,Shopping Centre MB,Stand,23,16.5,1.23,1.39,0.43,0.7,40.3,16.78
+2024-W11,L03,Shopping Centre MC,Stand,59,36.5,1.11,1.62,0.61,0.56,36.2,15.63
+2024-W11,L04,Community Fair MA,Fair,97,21.5,1.67,4.51,0.66,0.4,41.5,17.02
+2024-W11,L05,Residential Zone MA,Door to Door,122,39.0,2.31,3.13,0.9,0.59,37.1,16.52
+2024-W11,L06,Residential Zone MB,Door to Door,118,36.5,2.22,3.23,0.88,0.6,36.3,17.65
+2024-W11,L07,Shopping Centre WA,Stand,10,12.0,1.26,0.83,0.9,0.7,32.6,16.2
+2024-W11,L08,Shopping Centre WB,Stand,25,23.5,1.18,1.06,0.6,0.52,38.6,16.24
+2024-W11,L09,Shopping Centre WC,Stand,21,44.0,1.22,0.48,0.48,0.52,37.4,17.81
+2024-W11,L10,Community Fair WA,Fair,23,13.0,1.75,1.77,0.74,0.43,42.3,17.35
+2024-W11,L11,Residential Zone WA,Door to Door,77,20.0,2.42,3.85,0.84,0.66,37.7,17.4
+2024-W11,L12,Residential Zone WB,Door to Door,88,42.5,2.04,2.07,0.92,0.7,38.1,16.5
+2024-W11,L13,Shopping Centre NA,Stand,29,32.5,1.2,0.89,0.79,0.52,39.3,16.93
+2024-W11,L14,Shopping Centre NB,Stand,27,42.0,1.26,0.64,0.63,0.59,38.8,15.41
+2024-W11,L15,Shopping Centre NC,Stand,21,25.5,1.29,0.82,0.81,0.62,39.0,17.86
+2024-W11,L16,Community Fair NA,Fair,25,19.5,1.68,1.28,0.76,0.44,41.9,15.92
+2024-W11,L17,Residential Zone NA,Door to Door,133,37.0,2.05,3.59,0.84,0.63,37.8,17.15
+2024-W11,L18,Residential Zone NB,Door to Door,58,18.5,2.28,3.14,0.9,0.66,38.3,17.59
+2024-W11,L19,Shopping Centre EA,Stand,35,18.5,1.22,1.89,0.77,0.74,38.9,17.37
+2024-W11,L20,Shopping Centre EB,Stand,13,19.0,1.17,0.68,0.77,0.85,33.0,14.92
+2024-W11,L21,Shopping Centre EC,Stand,31,36.5,1.22,0.85,0.68,0.65,38.0,15.03
+2024-W11,L22,Community Fair EA,Fair,165,48.5,1.79,3.4,0.76,0.52,42.0,16.9
+2024-W11,L23,Residential Zone EA,Door to Door,76,27.0,2.09,2.81,0.86,0.61,38.3,17.09
+2024-W11,L24,Residential Zone EB,Door to Door,122,31.0,2.22,3.94,0.87,0.64,36.4,18.02
+2024-W11,L25,Shopping Centre SA,Stand,22,36.5,1.31,0.6,0.55,0.68,39.4,16.55
+2024-W11,L26,Shopping Centre SB,Stand,40,50.5,1.24,0.79,0.68,0.85,38.0,17.85
+2024-W11,L28,Community Fair SA,Fair,22,6.5,1.94,3.38,0.73,0.59,41.1,17.95
+2024-W11,L29,Residential Zone SA,Door to Door,39,23.5,2.31,1.66,0.82,0.56,38.9,17.13
+2024-W11,L30,Residential Zone SB,Door to Door,117,44.0,2.32,2.66,0.86,0.68,35.9,17.37
+2024-W12,L01,Shopping Centre MA,Stand,77,68.0,1.29,1.13,0.77,0.55,40.4,17.36
+2024-W12,L02,Shopping Centre MB,Stand,25,24.0,1.23,1.04,0.6,0.56,34.2,18.56
+2024-W12,L03,Shopping Centre MC,Stand,37,23.5,1.11,1.57,0.78,0.59,38.0,17.11
+2024-W12,L04,Community Fair MA,Fair,22,7.0,1.67,3.14,0.68,0.45,42.1,16.41
+2024-W12,L05,Residential Zone MA,Door to Door,119,32.0,2.31,3.72,0.92,0.61,37.2,15.8
+2024-W12,L06,Residential Zone MB,Door to Door,80,26.0,2.22,3.08,0.9,0.59,35.5,17.71
+2024-W12,L07,Shopping Centre WA,Stand,45,48.0,1.26,0.94,0.73,0.53,36.1,17.91
+2024-W12,L08,Shopping Centre WB,Stand,29,38.5,1.18,0.75,0.69,0.76,36.8,15.38
+2024-W12,L09,Shopping Centre WC,Stand,36,46.5,1.22,0.77,0.75,0.69,38.8,17.75
+2024-W12,L10,Community Fair WA,Fair,29,16.5,1.75,1.76,0.79,0.45,41.4,18.24
+2024-W12,L12,Residential Zone WB,Door to Door,42,20.0,2.04,2.1,0.9,0.76,35.3,16.4
+2024-W12,L13,Shopping Centre NA,Stand,48,55.0,1.2,0.87,0.85,0.65,37.0,15.73
+2024-W12,L14,Shopping Centre NB,Stand,14,19.0,1.26,0.74,0.86,0.71,33.9,15.86
+2024-W12,L15,Shopping Centre NC,Stand,3,7.0,1.29,0.43,1.0,0.33,41.3,15.0
+2024-W12,L16,Community Fair NA,Fair,38,31.0,1.68,1.23,0.74,0.42,41.2,18.08
+2024-W12,L17,Residential Zone NA,Door to Door,94,26.0,2.05,3.62,0.86,0.63,39.9,16.86
+2024-W12,L18,Residential Zone NB,Door to Door,66,26.0,2.28,2.54,0.89,0.67,35.7,15.08
+2024-W12,L19,Shopping Centre EA,Stand,26,14.0,1.22,1.86,0.77,0.54,37.5,20.04
+2024-W12,L20,Shopping Centre EB,Stand,25,26.5,1.17,0.94,0.88,0.6,35.0,17.16
+2024-W12,L21,Shopping Centre EC,Stand,31,32.5,1.22,0.95,0.58,0.65,35.1,16.87
+2024-W12,L22,Community Fair EA,Fair,78,25.0,1.79,3.12,0.68,0.5,42.2,17.01
+2024-W12,L23,Residential Zone EA,Door to Door,137,40.5,2.09,3.38,0.87,0.64,36.7,17.09
+2024-W12,L24,Residential Zone EB,Door to Door,139,31.0,2.22,4.48,0.92,0.63,37.2,17.97
+2024-W12,L25,Shopping Centre SA,Stand,30,43.5,1.31,0.69,0.53,0.7,37.1,16.33
+2024-W12,L26,Shopping Centre SB,Stand,9,18.0,1.24,0.5,0.67,0.56,37.3,16.11
+2024-W12,L27,Shopping Centre SC,Stand,44,31.0,1.11,1.42,0.7,0.59,36.6,18.11
+2024-W12,L28,Community Fair SA,Fair,76,42.5,1.94,1.79,0.79,0.53,42.7,16.17
+2024-W12,L29,Residential Zone SA,Door to Door,27,18.0,2.31,1.5,0.96,0.74,36.1,14.11
+2024-W12,L30,Residential Zone SB,Door to Door,91,36.5,2.32,2.49,0.9,0.73,38.2,16.69
+2024-W13,L01,Shopping Centre MA,Stand,40,31.0,1.29,1.29,0.78,0.55,40.3,15.8
+2024-W13,L02,Shopping Centre MB,Stand,33,26.5,1.23,1.25,0.58,0.48,38.3,15.36
+2024-W13,L03,Shopping Centre MC,Stand,39,23.5,1.11,1.66,0.69,0.69,37.6,16.97
+2024-W13,L04,Community Fair MA,Fair,74,26.5,1.67,2.79,0.8,0.39,44.0,16.82
+2024-W13,L05,Residential Zone MA,Door to Door,185,52.5,2.31,3.52,0.94,0.61,37.9,17.35
+2024-W13,L06,Residential Zone MB,Door to Door,53,17.5,2.22,3.03,0.92,0.7,38.3,17.62
+2024-W13,L07,Shopping Centre WA,Stand,17,23.5,1.26,0.72,0.71,0.82,37.9,15.53
+2024-W13,L08,Shopping Centre WB,Stand,45,47.0,1.18,0.96,0.62,0.58,37.1,17.07
+2024-W13,L09,Shopping Centre WC,Stand,19,24.0,1.22,0.79,0.63,0.47,38.0,19.95
+2024-W13,L10,Community Fair WA,Fair,33,31.0,1.75,1.06,0.82,0.48,43.2,17.45
+2024-W13,L11,Residential Zone WA,Door to Door,127,38.5,2.42,3.3,0.87,0.63,37.1,17.02
+2024-W13,L12,Residential Zone WB,Door to Door,21,11.5,2.04,1.83,0.81,0.62,37.7,15.48
+2024-W13,L13,Shopping Centre NA,Stand,46,32.5,1.2,1.42,0.76,0.63,37.5,18.11
+2024-W13,L14,Shopping Centre NB,Stand,19,19.0,1.26,1.0,0.79,0.63,39.1,16.37
+2024-W13,L15,Shopping Centre NC,Stand,12,13.5,1.29,0.89,0.67,0.33,35.7,20.58
+2024-W13,L16,Community Fair NA,Fair,45,33.0,1.68,1.36,0.69,0.56,41.3,17.27
+2024-W13,L17,Residential Zone NA,Door to Door,203,41.0,2.05,4.95,0.86,0.58,37.1,17.16
+2024-W13,L18,Residential Zone NB,Door to Door,93,26.0,2.28,3.58,0.85,0.57,35.9,18.91
+2024-W13,L19,Shopping Centre EA,Stand,30,20.0,1.22,1.5,0.57,0.7,36.2,15.83
+2024-W13,L20,Shopping Centre EB,Stand,18,25.0,1.17,0.72,0.56,0.56,37.9,17.33
+2024-W13,L21,Shopping Centre EC,Stand,23,25.0,1.22,0.92,0.83,0.83,36.7,15.74
+2024-W13,L22,Community Fair EA,Fair,113,36.0,1.79,3.14,0.75,0.58,41.3,16.61
+2024-W13,L23,Residential Zone EA,Door to Door,66,29.0,2.09,2.28,0.97,0.59,36.4,16.79
+2024-W13,L24,Residential Zone EB,Door to Door,60,19.5,2.22,3.08,0.93,0.47,36.9,17.07
+2024-W13,L25,Shopping Centre SA,Stand,50,52.5,1.31,0.95,0.74,0.62,38.1,16.98
+2024-W13,L26,Shopping Centre SB,Stand,26,25.0,1.24,1.04,0.65,0.46,38.2,16.31
+2024-W13,L27,Shopping Centre SC,Stand,24,17.5,1.11,1.37,0.79,0.62,37.7,17.12
+2024-W13,L28,Community Fair SA,Fair,115,38.5,1.94,2.99,0.69,0.48,42.5,17.54
+2024-W13,L29,Residential Zone SA,Door to Door,73,38.0,2.31,1.92,0.97,0.64,37.7,17.93
+2024-W13,L30,Residential Zone SB,Door to Door,47,18.0,2.32,2.61,0.72,0.68,39.0,15.81

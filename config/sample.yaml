@@ -1,0 +1,32 @@
+# Config for the synthetic data in data/sample/. Paths are relative to this file.
+# Column names in the sample already match the canonical names, so `columns` is only shown as a template:
+# list the headers your own export uses, e.g.  pledges: ["Sign-ups", "Pledges"]
+
+inputs:
+  activity:        {path: ../data/sample/shifts.csv}
+  locations:       {path: ../data/sample/locations.csv}
+  location_weekly: {path: ../data/sample/location_weekly.csv}
+  fundraisers:     {path: ../data/sample/fundraisers.csv}
+
+columns: {}
+
+formats:
+  decimal: "."
+
+validation:
+  max_hours_per_row: 14
+  max_value_per_pledge: 100        # EUR per month, per pledge
+  expected_date_range: ["2024-01-08", "2024-03-31"]
+  achieved_pph_tolerance: 0.01
+  severity:                        # error = row dropped, warning = row kept, ignore = not reported
+    implausible_hours: error
+    implausible_value_per_pledge: error
+    date_out_of_range: error
+    unknown_fundraiser_id: error
+
+classification:
+  min_hours: 20                    # fewer total hours than this -> "Insufficient data"
+  tiers:                           # share of target PPH, inclusive lower bounds
+    - {label: "Scale or repeat",         min: 1.00}
+    - {label: "Keep and monitor",        min: 0.75}
+    - {label: "Review before repeating", min: 0.0}
